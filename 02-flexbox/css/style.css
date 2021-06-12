@@ -257,8 +257,7 @@ p {
   line-height: 56px;
   text-align: center;
 }
-.productDetail h2,
-span {
+.productDetail h2, span {
   border-left: 1px solid #eaf0ed;
   border-right: 1px solid #eaf0ed;
 }
