@@ -262,15 +262,16 @@ span {
   border-right: 1px solid #eaf0ed;
 }
 .productDetail h2 {
+  width: 174px;
   padding: 0px 33px;
   font-weight: 300;
 }
 .productDetail span {
   width: 127px;
+  padding-right: 0px 20px;
   font-size: 20px;
   font-weight: 600;
   margin-left: -1px;
-  padding-right: 0px 20px;
 }
 .btn-add {
   background-color: #eaf0ed;
