@@ -253,7 +253,7 @@ p {
 
 .productDetail {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   line-height: 56px;
   text-align: center;
 }
@@ -267,7 +267,7 @@ span {
   font-weight: 300;
 }
 .productDetail span {
-  width: 134px;
+  width: 127px;
   padding: 0px 20px;
   font-size: 20px;
   font-weight: 600;
