@@ -174,9 +174,11 @@ header .nav {
   background-position: center;
   height: 0;
 } */
-.logo {
-  /* background-image: url(https://fakeimg.pl/250x250/); */
-  width: 100%;
+.logo a {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background: url(https://fakeimg.pl/250x250/) no-repeat;
   margin-bottom: 5%;
 }
 .nav a {
@@ -217,10 +219,12 @@ header .nav {
     flex-direction: column;
     align-items: center;
   }
-  /* .logo {
+  .logo a {
+    width: 150px;
+    height: 150px;
     background-image: url(https://fakeimg.pl/150x150/);
-    padding: 5%;
-  } */
+    margin-bottom: 10%;
+  }
   .nav {
     max-width: 70%;
     flex-wrap: wrap;
