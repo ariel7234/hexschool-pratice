@@ -1,0 +1,86 @@
+// RWD
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 568px) {
+    @content;
+  }
+}
+
+@mixin hide-text {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin ml-4 {
+  margin-left: 32px;
+}
+@mixin pt-2 {
+  padding-top: 16px;
+}
+@mixin pb-2 {
+  padding-bottom: 16px;
+}
+@mixin pt-28 {
+  padding-top: 28px;
+}
+@mixin pb-28 {
+  padding-bottom: 28px;
+}
+@mixin mr-30 {
+  margin-right: 30px;
+}
+@mixin pb-20 {
+  padding-bottom: 20px;
+}
+@mixin pl-36 {
+  padding-left: 36px;
+}
+@mixin pt-39 {
+  padding-top: 312px;
+}
+@mixin pt-40 {
+  padding-top: 40px;
+}
+@mixin pb-40 {
+  padding-bottom: 40px;
+}
+@mixin mt-60 {
+  margin-top: 60px;
+}
+@mixin mb-60 {
+  margin-bottom: 60px;
+}
+@mixin pb-132 {
+  padding-bottom: 132px;
+}
+
+@mixin white {
+  color: #ffffff;
+}
+
+@mixin btn($font-size) {
+  display: block;
+  text-align: center;
+  font-size: $font-size;
+  color: #000;
+  line-height: 60px;
+  width: 350px;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+
+@mixin btn-color($color) {
+  color: $color;
+  border: 2px solid $color;
+}
+@mixin btn_hover {
+  color: $light-gray;
+  border: 2px solid $light-brown;
+  background-color: $light-brown;
+}

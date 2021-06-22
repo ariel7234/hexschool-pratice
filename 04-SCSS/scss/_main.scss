@@ -1,0 +1,243 @@
+// 放主要css
+// ----------- 通用 -----------
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 60px;
+}
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.btn {
+  @include btn(28px);
+}
+.btn:hover {
+  @include btn_hover;
+}
+
+.btn-white {
+  @include btn-color(#ffffff);
+}
+
+.btn-sm {
+  @include btn(24px);
+}
+.img-sm {
+  height: 555px;
+}
+.img-lg {
+  height: 1080px;
+}
+.pt-92 {
+  padding-top: 92px;
+}
+// ----------- 通用 -----------
+
+.logo {
+  background: url($logo) no-repeat;
+  width: 128px;
+  height: 38px;
+  @include hide-text;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav a {
+  display: block;
+  color: $gray;
+  font-size: 20px;
+  @include ml-4;
+}
+.nav a:hover {
+  color: darken($color: $gray, $amount: 20);
+}
+.banner {
+  display: flex;
+  align-items: center;
+  background: url('../img/index1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 870px;
+}
+.intro-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.intro {
+  width: 445px;
+  height: fit-content;
+  @include white;
+}
+.intro > p {
+  font-size: 24px;
+  line-height: 36px;
+  @include pb-2;
+}
+.products {
+  @include mt-60;
+  @include mb-60;
+}
+.product-list {
+  display: flex;
+}
+// FIXME: 圖片變形問題
+
+.product-list img {
+  width: 50%;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.product-img {
+  width: 50%;
+}
+.product-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 110px;
+  padding-left: 110px;
+}
+.product-intro p {
+  font-size: 20px;
+  line-height: 30px;
+  @include pb-2;
+}
+.detail {
+  color: $link-color;
+}
+.detail:hover {
+  color: darken($color: $link-color, $amount: 10);
+  text-decoration: underline;
+}
+
+// FIXME: 圖片高度不一致、增加 sold out cover
+
+.product-price {
+  background-color: $light-gray;
+}
+.product-price ul {
+  display: flex;
+  justify-content: space-between;
+  @include pt-40;
+  @include pb-40;
+}
+.product-price li {
+  width: 31.5%;
+}
+.bottle-recycling {
+  display: flex;
+  align-items: center;
+  @include mt-60;
+  @include mb-60;
+}
+.bottle-recycling img {
+  width: 730px;
+  height: 520px;
+  @include mr-30;
+}
+.info p {
+  @include pt-2;
+  @include pb-2;
+}
+
+.subscribe-banner {
+  height: 600px;
+  background: url('../img/index10.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.subscribe-text {
+  color: $gray;
+  @include pt-39;
+  @include pb-20;
+}
+.btn-group {
+  position: absolute;
+}
+.btn-group input {
+  background-color: #ffffff;
+  border: 1px solid $brown;
+  border-radius: 4px 0px 0px 4px;
+  padding: 20px 26px;
+  margin-right: -1px;
+  text-align: left;
+}
+.btn-group button {
+  background-color: $brown;
+  border: 1px solid $brown;
+  border-radius: 0px 4px 4px 0px;
+  color: #ffffff;
+  padding: 20px 26px;
+  float: right;
+}
+.footer {
+  background-color: $brown;
+  @include pt-28;
+  @include pb-28;
+  color: #ffffff;
+}
+.footer-contain {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+}
+.copyright img {
+  @include mr-30;
+}
+.copyright p {
+  font-size: 14px;
+  line-height: 0px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a {
+  display: block;
+  @include pl-36;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 0px;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
